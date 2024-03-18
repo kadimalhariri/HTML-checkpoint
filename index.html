@@ -21,42 +21,31 @@
         
 
         <section id="about">
+          <div>
+            <h2 style="margin-bottom: 150px;">Orderd list</h2>
             <ol>
                 <li>Red</li>
                 <li>Green</li>
                 <li>Blue</li>
-                <li>Yellow</li>
-                <li>White</li>
-                <li>Black</li>
-                <li>Aqua</li>
-                <li>Gray</li>
-                <li>Brown</li>
-                <li>Pink</li>
             </ol>
+          </div>
+          <div>
+            <h2 style="margin-bottom: 150px;">Unorderd list</h2>
             <ul>
                 <li>Red</li>
                 <li>Green</li>
                 <li>Blue</li>
-                <li>Yellow</li>
-                <li>White</li>
-                <li>Black</li>
-                <li>Aqua</li>
-                <li>Gray</li>
-                <li>Brown</li>
-                <li>Pink</li>
             </ul>
+          </div>
+          <div>
+            <h2 style="margin-bottom: 150px;">Orderd list with (I) type</h2>
             <ol type="I">
                 <li>Red</li>
                 <li>Green</li>
                 <li>Blue</li>
-                <li>Yellow</li>
-                <li>White</li>
-                <li>Black</li>
-                <li>Aqua</li>
-                <li>Gray</li>
-                <li>Brown</li>
-                <li>Pink</li>
+              
             </ol>
+          </div>
         </section>
         <section id="work">
            <table border="1">
@@ -72,20 +61,20 @@
                 <td>b</td>
                 <td>c</td>
                 <td>d</td>
-                <td>e</td>
+                <td rowspan="2">e</td>
             </tr>
             <tr>
                 <td>10</td>
-                <td>20</td>
-                <td>30</td>
+                <td colspan="2">30</td>
+                
                 <td>40</td>
-                <td>50</td>
+               
             </tr>
             <tr>
                 <td>green</td>
                 <td>blue</td>
-                <td>red</td>
-                <td>yellow</td>
+                <td colspan="2">red</td>
+               
                 <td>pink</td>
             </tr>
             <tr>
@@ -97,12 +86,16 @@
             </tr>
            </table>
         </section>
+
         <section id="resume">
-            <audio src="./img/fly me to the moon.mp3" controls></audio>
-           <div class="kad">
+            <div class="audio-part">
+                <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;">Listen to the music now !</h2>
+                <audio src="./img/fly me to the moon.mp3" controls></audio>
+            </div>
+           <div class="form-part">
             <form action="">
                 <label for="email">Email</label>
-                <input type="email" placeholder="Enter your Email" id="email">
+                <input type="email" placeholder="Enter your Email" id="email" min="3" max="10">
                 <label for="password">Password</label>
                 <input type="password" placeholder="Enter your password" id="password">
                 <button type="submit">Send</button>
